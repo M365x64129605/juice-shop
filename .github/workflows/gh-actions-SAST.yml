@@ -2,7 +2,7 @@ name: Static Analysis Security Testing (SAST)
 
 on:
   push:
-    branches: - master
+    branches: [ "master" ]
   workflow_dispatch:
 
 permissions:
@@ -37,4 +37,5 @@ jobs:
           args:
             # Unique key of your project. You can find it in SonarQube > [my project] > Project Information (top-right menu)
             # mandatory
-            -Dsonar.projectKey=DevSecOps         
+            -Dsonar.projectKey=DevSecOps
+            
